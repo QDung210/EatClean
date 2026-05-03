@@ -506,14 +506,27 @@ body {
 .ls-val    { display: block; font-size: 20px; font-weight: 800; color: var(--teal2); }
 .ls-label  { display: block; font-size: 11px; color: var(--t3); margin-top: 2px; }
 .ls-divider{ width: 1px; height: 40px; background: var(--gb); margin: 0 8px; }
-.btn-google {
-  display: flex; align-items: center; justify-content: center; gap: 10px;
-  width: 100%; background: #fff; color: #1a1a1a; border: none;
-  border-radius: var(--rs); padding: 13px 20px; font-size: 15px; font-weight: 600;
-  cursor: pointer; transition: opacity .18s; margin-bottom: 14px; font-family: inherit;
+.login-form {
+  display: flex; flex-direction: column; gap: 12px;
+  text-align: left; margin-bottom: 14px;
 }
-.btn-google:hover { opacity: .9; }
-.login-note { font-size: 11px; color: var(--t3); }
+.login-form .form-field label { font-size: 13px; color: var(--t2); margin-bottom: 5px; }
+.login-form .form-field input {
+  width: 100%; background: rgba(255,255,255,.06); border: 1px solid var(--gb);
+  border-radius: var(--rs); padding: 11px 14px; font-size: 14px;
+  color: var(--t1); font-family: inherit; outline: none; transition: border-color .18s;
+}
+.login-form .form-field input:focus { border-color: var(--teal); }
+.login-error {
+  font-size: 13px; color: var(--rose);
+  background: rgba(244,63,94,.1); border-radius: 8px; padding: 9px 12px;
+}
+.login-confirm-msg {
+  font-size: 14px; color: var(--teal2); line-height: 1.6;
+  background: rgba(20,184,166,.1); border-radius: 10px; padding: 14px;
+  margin-bottom: 14px;
+}
+.login-note { font-size: 11px; color: var(--t3); margin-top: 4px; }
 
 /* ─── Splash ─────────────────────────────────────────────────── */
 .splash {
